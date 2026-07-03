@@ -7,7 +7,7 @@ $(document).ready(function () {
             division: "Elite",
             foto: "assets/img/card1.jpg",
             bio: "Corredor de potencia sostenida, enfocado en pruebas de ruta, contrarreloj y trabajo tactico para el equipo.",
-            palmares: ["Subaru Farellones", "Campeonato Nacional por Equipos", "Podio regional de ruta"]
+            palmares: ["Subaru Farellones", "Campeonato Nacional por Equipos"]
         },
         {
             nombre: "Raul Urbina",

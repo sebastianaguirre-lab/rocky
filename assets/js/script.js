@@ -47,6 +47,8 @@ $(document).ready(function () {
         $("#profilePalmares").html(htmlPalmares);
     }
 
+    actualizarCorredor(corredorActual);
+
     $(".navbar a[href^='#'], a.btn[href^='#']").click(function (event) {
         var destino = $(this).attr("href");
         if ($(destino).length) {

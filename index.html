@@ -35,9 +35,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto align-items-xl-center">
-                    <li class="nav-item"><a class="nav-link" href="#quienes-somos">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
                     <li class="nav-item"><a class="nav-link" href="#filosofia">Filosofia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#corredores">Corredores</a></li>
                     <li class="nav-item"><a class="nav-link" href="#logros">Logros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                     <li class="nav-item"><a class="nav-link" href="#competencias">Calendario</a></li>
@@ -55,7 +54,7 @@
                 <p class="eyebrow">Equipo chileno de ciclismo</p>
                 <h1>Cycling Rocky</h1>
                 <p class="hero-subtitle">Disciplina. Trabajo. Superacion.</p>
-                <a href="#quienes-somos" class="btn btn-principal btn-lg">
+                <a href="#equipo" class="btn btn-principal btn-lg">
                     Conoce al equipo <i class="fa-solid fa-arrow-right ms-2"></i>
                 </a>
             </div>
@@ -125,48 +124,7 @@
                         <p class="section-kicker">El equipo</p>
                         <h2>Corredores preparados para la ruta.</h2>
                     </div>
-                    <div class="row g-4">
-                        <div class="col-md-6 col-xl-3">
-                            <article class="rider-card">
-                                <img src="assets/img/Imagen3.png" alt="Raul Urbina">
-                                <div class="rider-card-body">
-                                    <span>Elite / Ruta</span>
-                                    <h3>Raul Urbina</h3>
-                                    <p>Fundador e impulsor del proyecto, con foco en resistencia, liderazgo y carreras de fondo.</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-md-6 col-xl-3">
-                            <article class="rider-card">
-                                <img src="assets/img/Imagen3.png" alt="Joel Pena">
-                                <div class="rider-card-body">
-                                    <span>Master / Escalada</span>
-                                    <h3>Joel Pena</h3>
-                                    <p>Corredor constante, fuerte en subidas y clave para sostener el ritmo del grupo.</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-md-6 col-xl-3">
-                            <article class="rider-card">
-                                <img src="assets/img/Imagen3.png" alt="Sebastian Aguirre">
-                                <div class="rider-card-body">
-                                    <span>Elite / Escalada</span>
-                                    <h3>Sebastian Aguirre</h3>
-                                    <p>Perfil de escalada, trabajo en velódromo y apoyo tactico en tramos decisivos.</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-md-6 col-xl-3">
-                            <article class="rider-card">
-                                <img src="assets/img/Imagen3.png" alt="Nuevo corredor">
-                                <div class="rider-card-body">
-                                    <span>Sub 23 / Sprint</span>
-                                    <h3>Nuevo corredor</h3>
-                                    <p>Espacio editable para sumar integrantes, categoria, especialidad e historia deportiva.</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
+                    <div id="ridersGrid" class="row g-4"></div>
                 </div>
             </section>
 
@@ -181,7 +139,7 @@
                         </div>
                         <div class="col-6 col-lg-3">
                             <div class="stat-item">
-                                <strong>12</strong>
+                                $110</strong>
                                 <span>corredores</span>
                             </div>
                         </div>
@@ -212,40 +170,6 @@
                     </div>
                 </div>
             </section>
-
-            <section id="corredores" class="section-block rider-profile-section">
-                <div class="container">
-                    <div class="section-heading">
-                        <p class="section-kicker">Nuestros corredores</p>
-                        <h2>Ficha deportiva editable.</h2>
-                    </div>
-                    <div class="profile-board">
-                        <div class="profile-photo-wrap">
-                            <img id="profilePhoto" alt="Foto del corredor seleccionado">
-                        </div>
-                        <div class="profile-content">
-                            <span id="profileCategory" class="profile-category"></span>
-                            <h3 id="profileName"></h3>
-                            <div class="profile-grid">
-                                <div>
-                                    <small>Especialidad</small>
-                                    <strong id="profileSpecialty"></strong>
-                                </div>
-                                <div>
-                                    <small>Categoria</small>
-                                    <strong id="profileDivision"></strong>
-                                </div>
-                            </div>
-                            <p id="profileBio"></p>
-                            <ul id="profilePalmares" class="palmares-list"></ul>
-                            <button id="nextRider" class="btn btn-outline-light" type="button">
-                                Siguiente corredor <i class="fa-solid fa-arrow-right ms-2"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section id="galeria" class="gallery-section">
                 <div class="container-fluid px-0">
                     <div class="container section-heading">
@@ -413,9 +337,41 @@
                 </div>
             </div>
         </footer>
-
+        <div class="modal fade rider-modal" id="riderModal" tabindex="-1" aria-labelledby="riderModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white rider-modal-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    <div class="modal-body p-0">
+                        <div class="profile-board modal-profile-board">
+                            <div class="profile-photo-wrap">
+                                <img id="profilePhoto" alt="Foto del corredor seleccionado">
+                            </div>
+                            <div class="profile-content">
+                                <span id="profileCategory" class="profile-category"></span>
+                                <h3 id="riderModalTitle"></h3>
+                                <div class="profile-grid">
+                                    <div>
+                                        <small>Especialidad</small>
+                                        <strong id="profileSpecialty"></strong>
+                                    </div>
+                                    <div>
+                                        <small>Categoria</small>
+                                        <strong id="profileDivision"></strong>
+                                    </div>
+                                </div>
+                                <p id="profileBio"></p>
+                                <ul id="profilePalmares" class="palmares-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/script.js"></script>
     </body>
 </html>
+
+
+

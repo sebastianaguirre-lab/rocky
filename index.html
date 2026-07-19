@@ -124,7 +124,16 @@
                         <p class="section-kicker">El equipo</p>
                         <h2>Corredores preparados para la ruta.</h2>
                     </div>
-                    <div id="ridersGrid" class="row g-4"></div>
+                                        <div id="ridersCarousel" class="carousel slide riders-carousel" data-bs-ride="false" data-bs-touch="true">
+                        <div id="ridersCarouselIndicators" class="carousel-indicators riders-carousel-indicators"></div>
+                        <div id="ridersCarouselInner" class="carousel-inner"></div>
+                        <button class="carousel-control-prev riders-carousel-control" type="button" data-bs-target="#ridersCarousel" data-bs-slide="prev" aria-label="Corredores anteriores">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next riders-carousel-control" type="button" data-bs-target="#ridersCarousel" data-bs-slide="next" aria-label="Corredores siguientes">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
                 </div>
             </section>
 
@@ -139,7 +148,7 @@
                         </div>
                         <div class="col-6 col-lg-3">
                             <div class="stat-item">
-                                $110</strong>
+                                <strong>10</strong>
                                 <span>corredores</span>
                             </div>
                         </div>

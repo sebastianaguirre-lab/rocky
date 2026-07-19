@@ -137,22 +137,63 @@ $(document).ready(function () {
         return logros;
     }
 
+    function obtenerCardsPorSlide() {
+        if (window.matchMedia("(max-width: 575px)").matches) {
+            return 1;
+        }
+
+        if (window.matchMedia("(max-width: 991px)").matches) {
+            return 2;
+        }
+
+        return 4;
+    }
+
+    function crearFichaCorredor(corredor) {
+        return '<div class="rider-carousel-card">' +
+            '<article class="rider-card">' +
+                '<img src="' + escapeHtml(obtenerFoto(corredor.foto)) + '" alt="' + escapeHtml(corredor.nombre) + '" onerror="this.onerror=null;this.src=\'' + fallbackPhoto + '\';">' +
+                '<div class="rider-card-body">' +
+                    '<span>' + escapeHtml(corredor.categoria) + ' / ' + escapeHtml(corredor.especialidad) + '</span>' +
+                    '<h3>' + escapeHtml(corredor.nombre) + '</h3>' +
+                    '<p>' + escapeHtml(corredor.resumen) + '</p>' +
+                    '<button class="btn btn-rider-more" type="button" data-rider="' + escapeHtml(corredor.id) + '">Leer mas <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i></button>' +
+                '</div>' +
+            '</article>' +
+        '</div>';
+    }
+
     function renderizarCorredores() {
-        var html = corredores.map(function (corredor) {
-            return '<div class="col-md-6 col-xl-3">' +
-                '<article class="rider-card">' +
-                    '<img src="' + escapeHtml(obtenerFoto(corredor.foto)) + '" alt="' + escapeHtml(corredor.nombre) + '" onerror="this.onerror=null;this.src=\'' + fallbackPhoto + '\';">' +
-                    '<div class="rider-card-body">' +
-                        '<span>' + escapeHtml(corredor.categoria) + ' / ' + escapeHtml(corredor.especialidad) + '</span>' +
-                        '<h3>' + escapeHtml(corredor.nombre) + '</h3>' +
-                        '<p>' + escapeHtml(corredor.resumen) + '</p>' +
-                        '<button class="btn btn-rider-more" type="button" data-rider="' + escapeHtml(corredor.id) + '">Leer mas <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i></button>' +
-                    '</div>' +
-                '</article>' +
+        var cardsPorSlide = obtenerCardsPorSlide();
+        var slides = [];
+
+        for (var i = 0; i < corredores.length; i += cardsPorSlide) {
+            slides.push(corredores.slice(i, i + cardsPorSlide));
+        }
+
+        var htmlSlides = slides.map(function (grupo, indice) {
+            return '<div class="carousel-item' + (indice === 0 ? ' active' : '') + '">' +
+                '<div class="rider-carousel-track">' +
+                    grupo.map(crearFichaCorredor).join("") +
+                '</div>' +
             '</div>';
         }).join("");
 
-        $("#ridersGrid").html(html);
+        var htmlIndicadores = slides.map(function (_, indice) {
+            return '<button type="button" data-bs-target="#ridersCarousel" data-bs-slide-to="' + indice + '"' +
+                (indice === 0 ? ' class="active" aria-current="true"' : '') +
+                ' aria-label="Grupo de corredores ' + (indice + 1) + '"></button>';
+        }).join("");
+
+        var carousel = document.getElementById("ridersCarousel");
+        var instancia = bootstrap.Carousel.getInstance(carousel);
+        if (instancia) {
+            instancia.dispose();
+        }
+
+        $("#ridersCarouselInner").html(htmlSlides);
+        $("#ridersCarouselIndicators").html(htmlIndicadores);
+        bootstrap.Carousel.getOrCreateInstance(carousel, { interval: false, touch: true, wrap: true });
     }
 
     function actualizarCorredor(corredor) {
@@ -171,6 +212,12 @@ $(document).ready(function () {
     }
 
     renderizarCorredores();
+
+    var resizeTimer;
+    $(window).on("resize", function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(renderizarCorredores, 180);
+    });
 
     $(".navbar a[href^='#'], a.btn[href^='#']").click(function (event) {
         var destino = $(this).attr("href");

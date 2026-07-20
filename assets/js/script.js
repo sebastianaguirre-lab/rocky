@@ -3,22 +3,22 @@ $(document).ready(function () {
     var corredores = [
         {
             id: "deyvid-perafan-tabares",
-            nombre: "Deyvid Perafan",
-            categoria: "Master A",
+            nombre: "Deyvid Perafán",
+            categoria: "Máster A",
             especialidad: "Sprint",
             resumen: "Gregario de lectura rápida y potencia para definir al sprint.",
             bio: "Excelente gregario. \"Leo las carreras y utilizo la fuerza a mi favor.\"",
-            palmares: "3 lugar departamentales de ciclismo Cali, Colombia.",
+            palmares: "3.er lugar departamentales de ciclismo Cali, Colombia.",
             foto: "assets/img/deyvid.jpg"
         },
         {
             id: "fernando-pautazzo",
             nombre: "Fernando Pautazzo",
-            categoria: "Master B",
+            categoria: "Máster B",
             especialidad: "Sprint-gregario",
             resumen: "Sprinter y gregario enfocado en apoyar al líder del equipo.",
             bio: "Principal objetivo enfocado en ayudar al líder del equipo para poder llevarlo a lograr los objetivos establecidos.\nPerfil de sprinter, medio fondo y crono.\nBase de ciclismo infantil juvenil en Argentina, sólida base en pista y circuitos planos.",
-            palmares: "En categoría infantil y juvenil, varios primeros puestos en carreras de pista y circuitos urbanos\n7mo puesto en categoría Master B2 en GF7Lagos 2023\n5to puesto campeonato 2018 Master A en Proam\nPrimer lugar en carreras de 1 día organizadas por Proam, Canadela y Club de la Ligua",
+            palmares: "En categoría infantil y juvenil, varios primeros puestos en carreras de pista y circuitos urbanos\n7.º puesto en categoría Máster B2 en GF7Lagos 2023\n5.º puesto campeonato 2018 Máster A en Proam\nPrimer lugar en carreras de 1 día organizadas por Proam, Canadela y Club de la Ligua",
             foto: "assets/img/fernando.jpeg"
         },
         {
@@ -28,7 +28,7 @@ $(document).ready(function () {
             especialidad: "Crono, fuga",
             resumen: "Rodador fuerte para sostener ritmo, crono y movimientos de fuga.",
             bio: "Fuerte en terreno llano y con posibilidades en la subida. Mantiene ritmos y ayuda en terrenos llanos.",
-            palmares: "3 lugar crono laboral Canadela 2019 categoría TC\nGanador duplax mixtas 2026, 205 gran fondo Curacaví",
+            palmares: "3.er lugar crono laboral Canadela 2019 categoría TC\nGanador duplax mixtas 2026, 205 gran fondo Curacaví",
             foto: "assets/img/diego.jpeg"
         },
         {
@@ -43,12 +43,12 @@ $(document).ready(function () {
         },
         {
             id: "juan-luis-perez-farfan",
-            nombre: "Juan Luis Perez",
-            categoria: "Master",
+            nombre: "Juan Luis Pérez",
+            categoria: "Máster",
             especialidad: "Fuga",
             resumen: "Lector de carrera y oportunista cuando aparece la fuga correcta.",
             bio: "Corredor director de la competencia, lector de rivales y oportunista en las fugas. \"Donde el aire no cabe en el pecho y las piernas no pueden más, las mías se activan para generar la diferencia.\"",
-            palmares: "5to lugar Giro Laboral AMCLA 2000\n4to lugar 2do semestre Canadela 2008\n2do lugar circuito La Pampilla 2016\n3er lugar Ranking anual Adultos B Proam\n5to lugar Ranking anual Master Canadela 2024\n5to lugar Ranking anual Master Canadela 2026",
+            palmares: "5.º lugar Giro Laboral AMCLA 2000\n4.º lugar 2.º semestre Canadela 2008\n2.º lugar circuito La Pampilla 2016\n3.er lugar Ranking anual Adultos B Proam\n5.º lugar Ranking anual Máster Canadela 2024\n5.º lugar Ranking anual Máster Canadela 2026",
             foto: "assets/img/juanluis.png"
         },
         {
@@ -73,7 +73,7 @@ $(document).ready(function () {
         },
         {
             id: "matias-ignacio-toro-castillo",
-            nombre: "MatÍas Toro",
+            nombre: "Matías Toro",
             categoria: "Adulto A",
             especialidad: "Ruta",
             resumen: "Rodador constante con enfoque de apoyo al equipo.",
@@ -88,13 +88,13 @@ $(document).ready(function () {
             especialidad: "Sprint y fuga",
             resumen: "Sprint y fuga con recorrido competitivo desde 2014.",
             bio: "Comienzo de carrera ciclista en el año 2014. Aprendizaje en solitario después de un año. En 2015 se integró a un equipo amateur llamado Pawertap, compitiendo en ranking Canadela. En 2017 cambió a Team Central Bike hasta 2018. Luego pasó a categoría élite, con participaciones intermitentes en carreras amateur laborales de Canadela, siempre dentro de los primeros 15 corredores. En 2025 se incorporó al equipo Team Rocky.",
-            palmares: "2016 debutante: 1ro en una de las 4 etapas fondo Noviciado Alto 3 días Vargas\n2016 debutante: 2do etapa Haras de Pirque ranking\n2016 debutante: 2do etapa Noviciado Alto ranking\n2025: 7mo etapa El Toyo ranking Canadela\n2025: 1ro meta volante etapa Lo Prado ranking Canadela\n2026: 3er etapa Monumento Til Til",
+            palmares: "2016 debutante: 1.º en una de las 4 etapas fondo Noviciado Alto 3 días Vargas\n2016 debutante: 2.º etapa Haras de Pirque ranking\n2016 debutante: 2.º etapa Noviciado Alto ranking\n2025: 7.º etapa El Toyo ranking Canadela\n2025: 1.º meta volante etapa Lo Prado ranking Canadela\n2026: 3.er etapa Monumento Til Til",
             foto: "assets/img/hans.jpeg"
         },
         {
             id: "camilo-ernesto-reyes-jana",
             nombre: "Camilo Reyes",
-            categoria: "Master A",
+            categoria: "Máster A",
             especialidad: "Plano",
             resumen: "Cortador de fugas.",
             bio: "Corredor de terreno plano, atento para cortar fugas.",
@@ -104,11 +104,11 @@ $(document).ready(function () {
         {
             id: "theo-mora",
             nombre: "José Mora",
-            categoria: "Master",
+            categoria: "Máster",
             especialidad: "Polivalente",
             resumen: "Corredor experimentado y polivalente.",
             bio: "3 años contratado por compañía CTC profesional del 90 al 93, como gregario, junto con Marcelo Agüero, Carlos Neira, Dino Aquea, Víctor Garrido (líder), Fernando Vera, Pedro Verna, Omar Contreras (actual DT de la selección nacional argentina).",
-            palmares: "Campeón nacional de pista en prueba Puntuación, categoría intermedia.\nCampeón metropolitano de Puntuación, en categoría intermedia.\nGanador Playa Ancha, Valparaíso en Junior.\nCampeón de Puntuación, Persecución Individual y Persecución por Equipos en categoría junior.\nCampeón Nacional de Ruta  en Chillán 4x70, con 18 años.\nCampeón Nacional de Pista en prueba de Puntuación y 2do en prueba Australiana.",
+            palmares: "Campeón nacional de pista en prueba Puntuación, categoría intermedia.\nCampeón metropolitano de Puntuación, en categoría intermedia.\nGanador Playa Ancha, Valparaíso en Junior.\nCampeón de Puntuación, Persecución Individual y Persecución por Equipos en categoría junior.\nCampeón Nacional de Ruta  en Chillán 4x70, con 18 años.\nCampeón Nacional de Pista en prueba de Puntuación y 2.º en prueba Australiana.",
             foto: "assets/img/TheoMora.jpeg"
         },
         {
@@ -117,18 +117,18 @@ $(document).ready(function () {
             categoria: "Elite",
             especialidad: "Escalador",
             resumen: "Corredor de escaladas y fugas",
-            bio: "Perfil de escalada, trabajo en velódromo y apoyo tactico en tramos decisivos. Enfocado en la escalada, pero preparado para todo tipo de terreno, ",
-            palmares: "1er lugar BCI Subaru Farellones 2024.\n 2do lugar Campeonato Nacional 2024, prueba Persecución por Equipos.\n5to lugar Ranking Anual Canadela 2025",
+            bio: "Perfil de escalada, trabajo en velódromo y apoyo táctico en tramos decisivos. Enfocado en la escalada, pero preparado para todo tipo de terreno, ",
+            palmares: "1er lugar BCI Subaru Farellones 2024.\n 2.º lugar Campeonato Nacional 2024, prueba Persecución por Equipos.\n5.º lugar Ranking Anual Canadela 2025",
             foto: "assets/img/sebastian.jpeg"
         },
         {
             id: "rocky",
             nombre: "Rocky",
-            categoria: "Master",
+            categoria: "Máster",
             especialidad: "Líder",
             resumen: "Líder del equipo",
             bio: "Impulsor y líder de este proyecto",
-            palmares: "2 veces Campeón Nacional Máster de Patín Carrera.\nCampeón por equipos en GF Valle del Elqui 2022, 2do lugar máster A y 3ero de la general.\n2do lugar Clásica Andacollo 2025\nGandores del Ranking Anual por Equipos Canadela 2024 y 2025, categroía Máster A.\n2dos en Vuelta Maule Centro 2024 y 3eros en 2025, en Clasificación por Equipos\nCampones Ranking por Equipos Coltauco 2025.",
+            palmares: "2 veces Campeón Nacional Máster de Patín Carrera.\nCampeón por equipos en GF Valle del Elqui 2022, 2.º lugar Máster A y 3.º de la general.\n2.º lugar Clásica Andacollo 2025\nGanadores del Ranking Anual por Equipos Canadela 2024 y 2025, categoría Máster A.\n2.º en Vuelta Maule Centro 2024 y 3.º en 2025, en Clasificación por Equipos\nCampeones Ranking por Equipos Coltauco 2025.",
             foto: "assets/img/ruben.jpg"
         }        
     ];
@@ -202,7 +202,7 @@ $(document).ready(function () {
                     '<span>' + escapeHtml(corredor.categoria) + ' / ' + escapeHtml(corredor.especialidad) + '</span>' +
                     '<h3>' + escapeHtml(corredor.nombre) + '</h3>' +
                     '<p>' + escapeHtml(corredor.resumen) + '</p>' +
-                    '<button class="btn btn-rider-more" type="button" data-rider="' + escapeHtml(normalizarId(corredor.id)) + '">Leer mas <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i></button>' +
+                    '<button class="btn btn-rider-more" type="button" data-rider="' + escapeHtml(normalizarId(corredor.id)) + '">Leer más <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i></button>' +
                 '</div>' +
             '</article>' +
         '</div>';

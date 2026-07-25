@@ -342,7 +342,7 @@ h2 {
 .section-story {
   background:
     linear-gradient(90deg, rgba(7, 8, 10, 0.9), rgba(7, 8, 10, 0.35)),
-    url("../img/iniciativa.jpeg") center 35%/cover;
+    url("../img/iniciativa.jpeg") center 35% / cover;
   min-height: 560px;
 }
 
@@ -908,8 +908,28 @@ h2 {
 }
 
 @media (max-width: 576px) {
+  .section-block,
+  .section-intro,
+  .section-story,
+  .gallery-section,
+  .sponsor-section {
+    padding: 3rem 0;
+  }
+  .section-heading {
+    margin-bottom: 1.6rem;
+  }
+  .lead-text,
+  .muted-text {
+    margin-top: 1rem;
+  }
+  .stats-strip {
+    padding: 2.75rem 0;
+  }
+  .gallery-section {
+    padding-bottom: 0;
+  }
   .hero {
-    min-height: 100svh;
+    min-height: 0;
   }
   .hero-img {
     height: auto;
@@ -926,9 +946,10 @@ h2 {
     );
   }
   .hero-content {
-    justify-content: flex-end;
+    justify-content: flex-start;
+    min-height: 0;
     padding-bottom: 3.5rem;
-    padding-top: 72vw;
+    padding-top: calc(56.94vw + 2rem);
   }
   .hero h1 {
     font-size: 3.75rem;

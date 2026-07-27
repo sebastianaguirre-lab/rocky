@@ -1,402 +1,875 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Team Rocky" />
+    <title>Team Rocky</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-    <head>
-    <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Team Rocky">
-        <title>Team Rocky</title>
-        <link rel="icon" href="assets/img/favicon.png" type="image/png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-
-    <body>
-        <nav id="navbar" class="navbar navbar-expand-xl navbar-dark fixed-top">
-            <div class="container nav-shell">
-                <a class="navbar-brand d-flex align-items-center" href="#inicio" aria-label="Ir al inicio">
-                    <img src="assets/img/logo.jpg" alt="Logo Cycling Rocky" class="logo me-2">
-                    Team Rocky
-                </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#menuPrincipal"
-                    aria-controls="menuPrincipal"
-                    aria-expanded="false"
-                    aria-label="Abrir menú"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menuPrincipal">
-                    <ul class="navbar-nav ms-auto align-items-xl-center">
-                    <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#filosofia">Filosofía</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#logros">Logros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#competencias">Calendario</a></li>
-                    <li class="nav-item"><a class="nav-link nav-cta" href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <header id="inicio" class="hero">
-            <!-- Cambia esta imagen por una foto horizontal potente del equipo en carrera. -->
-            <img src="assets/img/portada.jpeg" class="hero-img hero-img-primary" alt="Cycling Rocky en ruta">
-            <img src="assets/img/portada2.jpeg" class="hero-img hero-img-secondary" alt="" aria-hidden="true">
-            <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <p class="eyebrow">Equipo chileno de ciclismo</p>
-                <h1>Team Rocky</h1>
-                <p class="hero-subtitle">Disciplina. Trabajo. Superación</p>
-                <a href="#equipo" class="btn btn-principal btn-lg">
-                    Conoce al equipo <i class="fa-solid fa-arrow-right ms-2"></i>
-                </a>
-            </div>
-        </header>
-
-        <main>
-            <section id="quienes-somos" class="section-intro">
-                <div class="container">
-                    <div class="row align-items-center g-4 g-lg-5">
-                        <div class="col-lg-6">
-                            <!-- Cambia esta imagen por una foto grupal. -->
-                            <img src="assets/img/tt.jpeg" class="feature-image" alt="Equipo Cycling Rocky">
-                        </div>
-                        <div class="col-lg-6">
-                            <p class="section-kicker">Quiénes somos</p>
-                            <h2>Un proyecto competitivo con identidad chilena</h2>
-                            <p class="lead-text">
-                            Team Rocky nace con el objetivo de desarrollar ciclistas, fomentar el trabajo en equipo y representar con orgullo al ciclismo chileno. Creemos que la disciplina, la constancia y el compañerismo son la base para crecer dentro y fuera de la bicicleta.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="filosofia" class="section-block">
-                <div class="container">
-                    <div class="section-heading">
-                        <p class="section-kicker">Nuestra filosofía</p>
-                        <h2>La forma Rocky de correr</h2>
-                    </div>
-                    <div class="row g-3 g-lg-4">
-                        <div class="col-6 col-lg-3">
-                            <article class="value-card">
-                                <i class="fa-solid fa-person-biking"></i>
-                                <h3>Disciplina</h3>
-                                <p>Entrenar con foco, respetar el proceso y sostener el ritmo incluso cuando cuesta.</p>
-                            </article>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <article class="value-card">
-                                <i class="fa-solid fa-trophy"></i>
-                                <h3>Competencia</h3>
-                                <p>Salir a cada carrera con ambición, lectura táctica y mentalidad de equipo.</p>
-                            </article>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <article class="value-card">
-                                <i class="fa-solid fa-people-group"></i>
-                                <h3>Trabajo</h3>
-                                <p>Rodar juntos, cuidarse en ruta y convertir el esfuerzo individual en resultado colectivo.</p>
-                            </article>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <article class="value-card">
-                                <i class="fa-solid fa-fire-flame-curved"></i>
-                                <h3>Superación</h3>
-                                <p>Mejorar cada temporada y demostrar que la perseverancia también gana carreras.</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="equipo" class="section-block team-section">
-                <div class="container">
-                    <div class="section-heading">
-                        <p class="section-kicker">El equipo</p>
-                        <h2>Corredores preparados para la ruta</h2>
-                    </div>
-                        <div id="ridersCarousel" class="carousel slide riders-carousel" data-bs-ride="false" data-bs-touch="true">
-                        <div id="ridersCarouselIndicators" class="carousel-indicators riders-carousel-indicators"></div>
-                        <div id="ridersCarouselInner" class="carousel-inner"></div>
-                        <button class="carousel-control-prev riders-carousel-control" type="button" data-bs-target="#ridersCarousel" data-bs-slide="prev" aria-label="Corredores anteriores">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        </button>
-                        <button class="carousel-control-next riders-carousel-control" type="button" data-bs-target="#ridersCarousel" data-bs-slide="next" aria-label="Corredores siguientes">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <section id="logros" class="stats-strip">
-                <div class="container">
-                    <div class="row g-3 text-center">
-                        <div class="col-6 col-lg-3">
-                            <div class="stat-item">
-                                <strong>2+</strong>
-                                <span>años de historia</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="stat-item">
-                                <strong>20+</strong>
-                                <span>corredores</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="stat-item">
-                                <strong>50+</strong>
-                                <span>podios</span>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                            <div class="stat-item">
-                                <strong>50+</strong>
-                                <span>competencias</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="historia" class="section-story">
-                <div class="container">
-                    <div class="story-panel">
-                        <p class="section-kicker">Historia</p>
-                        <h2>De una iniciativa personal a un equipo con proyección</h2>
-                        <p>
-                            Lo que comenzó como una iniciativa impulsada por Raúl "Rocky" Urbina terminó transformándose en un equipo competitivo que participa en carreras nacionales y busca abrir camino a nuevos ciclistas. Desde sus inicios, el proyecto ha querido demostrar que la disciplina, la perseverancia y el trabajo colectivo pueden convertir una idea en una estructura deportiva real.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="galeria" class="gallery-section">
-                <div class="container-fluid px-0">
-                    <div class="container section-heading">
-                        <p class="section-kicker">Galería</p>
-                        <h2>Ruta, premiación y entrenamiento</h2>
-                    </div>
-                    <div id="galeriaRocky" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#galeriaRocky" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
-                            <button type="button" data-bs-target="#galeriaRocky" data-bs-slide-to="1" aria-label="Foto 2"></button>
-                            <button type="button" data-bs-target="#galeriaRocky" data-bs-slide-to="2" aria-label="Foto 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/img/compitiendo.jpeg" class="d-block w-100" alt="Team Rocky en competencia">
-                                <div class="carousel-caption">
-                                    <span>Competencia</span>
-                                    <h3>Correr juntos, llegar fuertes</h3>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/entrenando.jpeg" class="d-block w-100" alt="Entrenamiento Team Rocky">
-                                <div class="carousel-caption">
-                                    <span>Entrenamiento</span>
-                                    <h3>La preparación también se corre en equipo</h3>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/img/celebración.jpeg" class="d-block w-100" alt="Celebración Team Rocky">
-                                <div class="carousel-caption">
-                                    <span>Celebración</span>
-                                    <h3>Cada resultado tiene horas de ruta detrás</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#galeriaRocky" data-bs-slide="prev" aria-label="Foto anterior">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#galeriaRocky" data-bs-slide="next" aria-label="Foto siguiente">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <section id="competencias" class="section-block calendar-section">
-                <div class="container">
-                    <div class="row g-4 align-items-start">
-                        <div class="col-lg-5">
-                            <p class="section-kicker">Próximas competencias</p>
-                            <h2>Calendario</h2>
-                            <p class="muted-text">
-                                Nuestras próximas competencias
-                            </p>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="table-responsive race-table-wrap">
-                                <table class="table race-table align-middle mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>Fecha</th>
-                                            <th>Carrera</th>
-                                            <th>Lugar</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>9 Ago</td>
-                                            <td>Giro del Maipo</td>
-                                            <td>Región Metropolitana</td>
-                                        </tr>
-                                        <tr>
-                                            <td>......</td>
-                                            <td>...................</td>
-                                            <td>...................</td>
-                                        </tr>
-                                        <tr>
-                                            <td>......</td>
-                                            <td>...................</td>
-                                            <td>...................</td>
-                                        </tr>
-                                        <tr>
-                                            <td>......</td>
-                                            <td>...................</td>
-                                            <td>...................</td>
-                                        </tr>
-                                        </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="auspiciadores" class="sponsor-section">
-                <div class="container">
-                    <div class="sponsor-panel">
-                        <div>
-                            <p class="section-kicker">Auspiciadores</p>
-                            <h2>Tu marca podría aparecer aquí</h2>
-                            <p>Apoya un proyecto deportivo en crecimiento y conecta tu marca con disciplina, comunidad y competencia.</p>
-                        </div>
-                        <a href="#contacto" class="btn btn-principal">Contáctanos</a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contacto" class="section-block contact-section">
-                <div class="container">
-                    <div class="row g-4">
-                        <div class="col-lg-5">
-                            <p class="section-kicker">Contacto</p>
-                            <h2>Conversemos en la próxima etapa</h2>
-                            <div class="contact-list">
-                                <a href="https://www.instagram.com/cycling_rocky/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                                <a href="mailto:teams.rocky@gmail.com"><i class="fa-solid fa-envelope"></i> teams.rocky@gmail.com</a>
-                                <a href="https://wa.me/56940474786" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <form id="formularioContacto" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                                <input type="hidden" name="access_key" value="0259d7db-7945-44ae-8991-22b802cabe87">
-                                <input type="hidden" name="subject" value="Nuevo mensaje desde Team Rocky">
-                                <input type="hidden" name="from_name" value="Sitio Team Rocky">
-                                <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <label for="nombre" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" id="nombre" name="name" placeholder="Tu nombre" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="correo" class="form-label">Correo</label>
-                                        <input type="email" class="form-control" id="correo" name="email" placeholder="tu@email.cl" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="mensaje" class="form-label">Mensaje</label>
-                                        <textarea class="form-control" id="mensaje" name="message" rows="5" placeholder="Quiero apoyar, entrenar o contactar al equipo..." required></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="submit" class="btn btn-principal">
-                                            Enviar mensaje <i class="fa-solid fa-paper-plane ms-2"></i>
-                                        </button>
-                                        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-main">
-                    <div>
-                        <h2>Team Rocky</h2>
-                        <p>Disciplina - Trabajo - Superación</p>
-                    </div>
-                    <div class="redes-sociales">
-                        <a href="https://www.instagram.com/cycling_rocky/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="mailto:teams.rocky@gmail.com" aria-label="Correo"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="https://wa.me/56940474786" target="_blank" rel="noopener" aria-label="WhatsApp Team Rocky"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <span>© 2026 Team Rocky</span>
-
-                    <span class="footer-dev">
-                        Sitio desarrollado por Sebastián Aguirre   
-                        <a href="https://sebastianaguirre-lab.github.io/Portafolio/" target="_blank" rel="noopener">
-                            · Portafolio
-                        </a>
-                        ·
-                        <a href="mailto:sebastian.aguirre@ug.uchile.cl">Correo</a>
-                        ·
-                        <a href="https://wa.me/56994226803" target="_blank" rel="noopener">WhatsApp</a>
-                    </span>
-                </div>
-            </div>
-        </footer>
-        <div class="modal fade rider-modal" id="riderModal" tabindex="-1" aria-labelledby="riderModalTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                    <button type="button" class="btn-close btn-close-white rider-modal-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    <div class="modal-body p-0">
-                        <div class="profile-board modal-profile-board">
-                            <div class="profile-photo-wrap">
-                                <img id="profilePhoto" alt="Foto del corredor seleccionado">
-                            </div>
-                            <div class="profile-content">
-                                <span id="profileCategory" class="profile-category"></span>
-                                <h3 id="riderModalTitle"></h3>
-                                <div class="profile-grid">
-                                    <div>
-                                        <small>Especialidad</small>
-                                        <strong id="profileSpecialty"></strong>
-                                    </div>
-                                    <div>
-                                        <small>Categoría</small>
-                                        <strong id="profileDivision"></strong>
-                                    </div>
-                                </div>
-                                <p id="profileBio"></p>
-                                <ul id="profilePalmares" class="palmares-list"></ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-xl navbar-dark fixed-top">
+      <div class="container nav-shell">
+        <a
+          class="navbar-brand d-flex align-items-center"
+          href="#inicio"
+          aria-label="Ir al inicio"
+        >
+          <img
+            src="assets/img/logo.jpg"
+            alt="Logo Cycling Rocky"
+            class="logo me-2"
+          />
+          Team Rocky
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-xl-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#equipo">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#filosofia">Filosofía</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#logros">Logros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prensa">Prensa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#competencias">Calendario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-cta" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/script.js"></script>
-    </body>
+      </div>
+    </nav>
+    <header id="inicio" class="hero">
+      <!-- Cambia esta imagen por una foto horizontal potente del equipo en carrera. -->
+      <img
+        src="assets/img/portada.jpeg"
+        class="hero-img hero-img-primary"
+        alt="Cycling Rocky en ruta"
+      />
+      <img
+        src="assets/img/portada2.jpeg"
+        class="hero-img hero-img-secondary"
+        alt=""
+        aria-hidden="true"
+      />
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Equipo chileno de ciclismo</p>
+        <h1>Team Rocky</h1>
+        <p class="hero-subtitle">Disciplina. Trabajo. Superación</p>
+        <a href="#equipo" class="btn btn-principal btn-lg">
+          Conoce al equipo <i class="fa-solid fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="quienes-somos" class="section-intro">
+        <div class="container">
+          <div class="row align-items-center g-4 g-lg-5">
+            <div class="col-lg-6">
+              <!-- Cambia esta imagen por una foto grupal. -->
+              <img
+                src="assets/img/tt.jpeg"
+                class="feature-image"
+                alt="Equipo Cycling Rocky"
+              />
+            </div>
+            <div class="col-lg-6">
+              <p class="section-kicker">Quiénes somos</p>
+              <h2>Un proyecto competitivo con identidad chilena</h2>
+              <p class="lead-text">
+                Team Rocky nace con el objetivo de desarrollar ciclistas,
+                fomentar el trabajo en equipo y representar con orgullo al
+                ciclismo chileno. Creemos que la disciplina, la constancia y el
+                compañerismo son la base para crecer dentro y fuera de la
+                bicicleta.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="filosofia" class="section-block">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">Nuestra filosofía</p>
+            <h2>La forma Rocky de correr</h2>
+          </div>
+          <div class="row g-3 g-lg-4">
+            <div class="col-6 col-lg-3">
+              <article class="value-card">
+                <i class="fa-solid fa-person-biking"></i>
+                <h3>Disciplina</h3>
+                <p>
+                  Entrenar con foco, respetar el proceso y sostener el ritmo
+                  incluso cuando cuesta.
+                </p>
+              </article>
+            </div>
+            <div class="col-6 col-lg-3">
+              <article class="value-card">
+                <i class="fa-solid fa-trophy"></i>
+                <h3>Competencia</h3>
+                <p>
+                  Salir a cada carrera con ambición, lectura táctica y
+                  mentalidad de equipo.
+                </p>
+              </article>
+            </div>
+            <div class="col-6 col-lg-3">
+              <article class="value-card">
+                <i class="fa-solid fa-people-group"></i>
+                <h3>Trabajo</h3>
+                <p>
+                  Rodar juntos, cuidarse en ruta y convertir el esfuerzo
+                  individual en resultado colectivo.
+                </p>
+              </article>
+            </div>
+            <div class="col-6 col-lg-3">
+              <article class="value-card">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <h3>Superación</h3>
+                <p>
+                  Mejorar cada temporada y demostrar que la perseverancia
+                  también gana carreras.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="equipo" class="section-block team-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">El equipo</p>
+            <h2>Corredores preparados para la ruta</h2>
+          </div>
+          <div
+            id="ridersCarousel"
+            class="carousel slide riders-carousel"
+            data-bs-ride="false"
+            data-bs-touch="true"
+          >
+            <div
+              id="ridersCarouselIndicators"
+              class="carousel-indicators riders-carousel-indicators"
+            ></div>
+            <div id="ridersCarouselInner" class="carousel-inner"></div>
+            <button
+              class="carousel-control-prev riders-carousel-control"
+              type="button"
+              data-bs-target="#ridersCarousel"
+              data-bs-slide="prev"
+              aria-label="Corredores anteriores"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next riders-carousel-control"
+              type="button"
+              data-bs-target="#ridersCarousel"
+              data-bs-slide="next"
+              aria-label="Corredores siguientes"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="logros" class="stats-strip">
+        <div class="container">
+          <div class="row g-3 text-center">
+            <div class="col-6 col-lg-3">
+              <div class="stat-item">
+                <strong>2+</strong>
+                <span>años de historia</span>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat-item">
+                <strong>20+</strong>
+                <span>corredores</span>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat-item">
+                <strong>50+</strong>
+                <span>podios</span>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat-item">
+                <strong>50+</strong>
+                <span>competencias</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="historia" class="section-story">
+        <div class="container">
+          <div class="story-panel">
+            <p class="section-kicker">Historia</p>
+            <h2>De una iniciativa personal a un equipo con proyección</h2>
+            <p>
+              Lo que comenzó como una iniciativa impulsada por Raúl "Rocky"
+              Urbina terminó transformándose en un equipo competitivo que
+              participa en carreras nacionales y busca abrir camino a nuevos
+              ciclistas. Desde sus inicios, el proyecto ha querido demostrar que
+              la disciplina, la perseverancia y el trabajo colectivo pueden
+              convertir una idea en una estructura deportiva real.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="gallery-section">
+        <div class="container-fluid px-0">
+          <div class="container section-heading">
+            <p class="section-kicker">Galería</p>
+            <h2>Ruta, premiación y entrenamiento</h2>
+          </div>
+          <div id="galeriaRocky" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#galeriaRocky"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Foto 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#galeriaRocky"
+                data-bs-slide-to="1"
+                aria-label="Foto 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#galeriaRocky"
+                data-bs-slide-to="2"
+                aria-label="Foto 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/img/compitiendo.jpeg"
+                  class="d-block w-100"
+                  alt="Team Rocky en competencia"
+                />
+                <div class="carousel-caption">
+                  <span>Competencia</span>
+                  <h3>Correr juntos, llegar fuertes</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/entrenando.jpeg"
+                  class="d-block w-100"
+                  alt="Entrenamiento Team Rocky"
+                />
+                <div class="carousel-caption">
+                  <span>Entrenamiento</span>
+                  <h3>La preparación también se corre en equipo</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/img/celebración.jpeg"
+                  class="d-block w-100"
+                  alt="Celebración Team Rocky"
+                />
+                <div class="carousel-caption">
+                  <span>Celebración</span>
+                  <h3>Cada resultado tiene horas de ruta detrás</h3>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#galeriaRocky"
+              data-bs-slide="prev"
+              aria-label="Foto anterior"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#galeriaRocky"
+              data-bs-slide="next"
+              aria-label="Foto siguiente"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="prensa" class="press-section">
+        <div class="container">
+          <div class="press-heading">
+            <div>
+              <p class="section-kicker">En la prensa</p>
+              <h2>Historias que trascienden la ruta</h2>
+            </div>
+            <p>
+              Conoce las entrevistas y reportajes que distintos medios han
+              realizado sobre Team Rocky y la historia del proyecto.
+            </p>
+          </div>
+          <div
+            id="pressCarousel"
+            class="carousel slide press-carousel"
+            data-bs-ride="false"
+            data-bs-touch="true"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <article class="press-card">
+                  <a
+                    class="press-card-image"
+                    href="https://www.tropezon.cl/2024/11/cycling-rocky-la-fuerza-de-un-sueno-forjado-en-la-lucha-y-la-superacion/"
+                    target="_blank"
+                    rel="noopener"
+                    ><img
+                      src="assets/img/entrevista 2024.png"
+                      alt="Integrantes de Team Rocky"
+                  /></a>
+                  <div class="press-card-body">
+                    <div class="press-meta">
+                      <span>Publicado por <strong>Tropezón</strong></span
+                      ><time datetime="2024-11-28">Noviembre 2024</time>
+                    </div>
+                    <h3>
+                      Cycling Rocky: la fuerza de un sueño forjado en la lucha y
+                      la superación
+                    </h3>
+                    <p>
+                      La historia de esfuerzo, resiliencia y trabajo colectivo
+                      detrás del crecimiento de Team Rocky.
+                    </p>
+                    <a
+                      class="press-link"
+                      href="https://www.tropezon.cl/2024/11/cycling-rocky-la-fuerza-de-un-sueno-forjado-en-la-lucha-y-la-superacion/"
+                      target="_blank"
+                      rel="noopener"
+                      >Leer entrevista <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item">
+                <article class="press-card">
+                  <a
+                    class="press-card-image"
+                    href="https://www.tropezon.cl/2025/12/raul-rocky-urbina-del-patin-carrera-a-referente-del-ciclismo-chileno/"
+                    target="_blank"
+                    rel="noopener"
+                    ><img
+                      src="assets/img/entrevista 2025.png"
+                      alt="Raúl Rocky Urbina, fundador de Team Rocky"
+                  /></a>
+                  <div class="press-card-body">
+                    <div class="press-meta">
+                      <span>Publicado por <strong>Tropezón</strong></span
+                      ><time datetime="2025-12-09">Diciembre 2025</time>
+                    </div>
+                    <h3>
+                      Raúl “Rocky” Urbina: del patín carrera a referente del
+                      ciclismo chileno
+                    </h3>
+                    <p>
+                      Una trayectoria marcada por la disciplina, los títulos
+                      nacionales y una profunda vocación formativa.
+                    </p>
+                    <a
+                      class="press-link"
+                      href="https://www.tropezon.cl/2025/12/raul-rocky-urbina-del-patin-carrera-a-referente-del-ciclismo-chileno/"
+                      target="_blank"
+                      rel="noopener"
+                      >Leer entrevista <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </article>
+              </div>
+              <div class="carousel-item">
+                <article class="press-card press-card-video">
+                  <a
+                    class="press-card-image"
+                    href="https://www.youtube.com/watch?v=hfvQijg5BVI&t=29s"
+                    target="_blank"
+                    rel="noopener"
+                    ><img
+                      src="https://img.youtube.com/vi/hfvQijg5BVI/maxresdefault.jpg"
+                      alt="Conversación con Rocky en YouTube" /><span
+                      class="press-play"
+                      ><i class="fa-solid fa-play"></i></span
+                  ></a>
+                  <div class="press-card-body">
+                    <div class="press-meta">
+                      <span>Publicado en <strong>YouTube</strong></span
+                      ><span>Entrevista</span>
+                    </div>
+                    <h3>Conversación con Rocky</h3>
+                    <p>
+                      Una conversación sobre los orígenes, el propósito y el
+                      camino recorrido por el proyecto.
+                    </p>
+                    <div class="press-actions">
+                      <a
+                        class="btn btn-press-primary"
+                        href="https://www.youtube.com/watch?v=hfvQijg5BVI&t=29s"
+                        target="_blank"
+                        rel="noopener"
+                        ><i class="fa-solid fa-play"></i> Ver entrevista</a
+                      ><button
+                        class="btn btn-press-secondary"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#pressSummaryModal"
+                      >
+                        <i class="fa-regular fa-file-lines"></i> Leer resumen
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="carousel-indicators press-indicators">
+              <button
+                type="button"
+                data-bs-target="#pressCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Reportaje 1"
+              ></button
+              ><button
+                type="button"
+                data-bs-target="#pressCarousel"
+                data-bs-slide-to="1"
+                aria-label="Reportaje 2"
+              ></button
+              ><button
+                type="button"
+                data-bs-target="#pressCarousel"
+                data-bs-slide-to="2"
+                aria-label="Entrevista 3"
+              ></button>
+            </div>
+            <button
+              class="carousel-control-prev press-control"
+              type="button"
+              data-bs-target="#pressCarousel"
+              data-bs-slide="prev"
+              aria-label="Publicación anterior"
+            >
+              <span class="carousel-control-prev-icon"></span></button
+            ><button
+              class="carousel-control-next press-control"
+              type="button"
+              data-bs-target="#pressCarousel"
+              data-bs-slide="next"
+              aria-label="Publicación siguiente"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="competencias" class="section-block calendar-section">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-5">
+              <p class="section-kicker">Próximas competencias</p>
+              <h2>Calendario</h2>
+              <p class="muted-text">Nuestras próximas competencias</p>
+            </div>
+            <div class="col-lg-7">
+              <div class="table-responsive race-table-wrap">
+                <table class="table race-table align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Fecha</th>
+                      <th>Carrera</th>
+                      <th>Lugar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>9 Ago</td>
+                      <td>Giro del Maipo</td>
+                      <td>Región Metropolitana</td>
+                    </tr>
+                    <tr>
+                      <td>......</td>
+                      <td>...................</td>
+                      <td>...................</td>
+                    </tr>
+                    <tr>
+                      <td>......</td>
+                      <td>...................</td>
+                      <td>...................</td>
+                    </tr>
+                    <tr>
+                      <td>......</td>
+                      <td>...................</td>
+                      <td>...................</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="auspiciadores" class="sponsor-section">
+        <div class="container">
+          <div class="sponsor-panel">
+            <div>
+              <p class="section-kicker">Auspiciadores</p>
+              <h2>Tu marca podría aparecer aquí</h2>
+              <p>
+                Apoya un proyecto deportivo en crecimiento y conecta tu marca
+                con disciplina, comunidad y competencia.
+              </p>
+            </div>
+            <a href="#contacto" class="btn btn-principal">Contáctanos</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section-block contact-section">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5">
+              <p class="section-kicker">Contacto</p>
+              <h2>Conversemos en la próxima etapa</h2>
+              <div class="contact-list">
+                <a
+                  href="https://www.instagram.com/cycling_rocky/"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-instagram"></i> Instagram</a
+                >
+                <a href="mailto:teams.rocky@gmail.com"
+                  ><i class="fa-solid fa-envelope"></i> teams.rocky@gmail.com</a
+                >
+                <a
+                  href="https://wa.me/56940474786"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-whatsapp"></i> WhatsApp</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <form
+                id="formularioContacto"
+                class="contact-form"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="0259d7db-7945-44ae-8991-22b802cabe87"
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="Nuevo mensaje desde Team Rocky"
+                />
+                <input
+                  type="hidden"
+                  name="from_name"
+                  value="Sitio Team Rocky"
+                />
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  class="d-none"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      name="name"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="correo"
+                      name="email"
+                      placeholder="tu@email.cl"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea
+                      class="form-control"
+                      id="mensaje"
+                      name="message"
+                      rows="5"
+                      placeholder="Quiero apoyar, entrenar o contactar al equipo..."
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-principal">
+                      Enviar mensaje
+                      <i class="fa-solid fa-paper-plane ms-2"></i>
+                    </button>
+                    <p
+                      class="form-status"
+                      id="formStatus"
+                      role="status"
+                      aria-live="polite"
+                    ></p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <div>
+            <h2>Team Rocky</h2>
+            <p>Disciplina - Trabajo - Superación</p>
+          </div>
+          <div class="redes-sociales">
+            <a
+              href="https://www.instagram.com/cycling_rocky/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="mailto:teams.rocky@gmail.com" aria-label="Correo"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a
+              href="https://wa.me/56940474786"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp Team Rocky"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Team Rocky</span>
+
+          <span class="footer-dev">
+            Sitio desarrollado por Sebastián Aguirre
+            <a
+              href="https://sebastianaguirre-lab.github.io/Portafolio/"
+              target="_blank"
+              rel="noopener"
+            >
+              · Portafolio
+            </a>
+            ·
+            <a href="mailto:sebastian.aguirre@ug.uchile.cl">Correo</a>
+            ·
+            <a href="https://wa.me/56994226803" target="_blank" rel="noopener"
+              >WhatsApp</a
+            >
+          </span>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade rider-modal"
+      id="riderModal"
+      tabindex="-1"
+      aria-labelledby="riderModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close btn-close-white rider-modal-close"
+            data-bs-dismiss="modal"
+            aria-label="Cerrar"
+          ></button>
+          <div class="modal-body p-0">
+            <div class="profile-board modal-profile-board">
+              <div class="profile-photo-wrap">
+                <img id="profilePhoto" alt="Foto del corredor seleccionado" />
+              </div>
+              <div class="profile-content">
+                <span id="profileCategory" class="profile-category"></span>
+                <h3 id="riderModalTitle"></h3>
+                <div class="profile-grid">
+                  <div>
+                    <small>Especialidad</small>
+                    <strong id="profileSpecialty"></strong>
+                  </div>
+                  <div>
+                    <small>Categoría</small>
+                    <strong id="profileDivision"></strong>
+                  </div>
+                </div>
+                <p id="profileBio"></p>
+                <ul id="profilePalmares" class="palmares-list"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade press-summary-modal"
+      id="pressSummaryModal"
+      tabindex="-1"
+      aria-labelledby="pressSummaryTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="press-modal-header">
+            <div>
+              <p class="section-kicker">Resumen de la entrevista</p>
+              <h2 id="pressSummaryTitle">Conversación con Rocky</h2>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar resumen"
+            ></button>
+          </div>
+          <div class="modal-body press-modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rocky
+              comparte cómo nació una inquietud personal que, con constancia y
+              trabajo, comenzó a tomar la forma de un proyecto deportivo
+              colectivo.
+            </p>
+            <p>
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              La conversación recorre los primeros desafíos del equipo y las
+              decisiones que permitieron construir una identidad reconocible
+              dentro del ciclismo nacional.
+            </p>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris. La disciplina aparece como el hilo conductor: entrenar
+              con propósito, sostener el esfuerzo y entender que cada corredor
+              aporta al resultado común.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore. Rocky también reflexiona sobre las derrotas, las
+              pérdidas y la capacidad de convertir los momentos difíciles en
+              combustible para seguir avanzando.
+            </p>
+            <p>
+              Excepteur sint occaecat cupidatat non proident. El relato destaca
+              el valor de la familia, los compañeros y todas las personas que
+              han acompañado el crecimiento de Team Rocky.
+            </p>
+            <p>
+              La entrevista cierra con una mirada hacia el futuro: formar nuevos
+              talentos, competir con ambición y mantener intactos los valores
+              que dieron origen al proyecto.
+            </p>
+          </div>
+          <div class="press-modal-footer">
+            <a
+              class="btn btn-principal btn-lg"
+              href="https://www.youtube.com/watch?v=hfvQijg5BVI&t=29s"
+              target="_blank"
+              rel="noopener"
+              ><i class="fa-solid fa-play me-2"></i> Ver la entrevista completa
+              en YouTube</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
-
-
-

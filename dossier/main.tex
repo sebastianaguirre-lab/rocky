@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{helvet}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\usepackage{tikz}
+
+\renewcommand{\familydefault}{\sfdefault}
+\geometry{top=18mm,bottom=18mm,left=20mm,right=20mm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+\definecolor{rockyred}{HTML}{C8102E}
+\definecolor{rockyblack}{HTML}{161616}
+\definecolor{rockygray}{HTML}{F1F1F1}
+\definecolor{rockymidgray}{HTML}{777777}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=rockyred,
+  urlcolor=rockyred,
+  pdftitle={Team Rocky — Dossier de patrocinio 2027},
+  pdfauthor={Team Rocky}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\textbf{TEAM ROCKY}}
+\fancyhead[R]{\footnotesize DOSSIER DE PATROCINIO 2027}
+\fancyfoot[L]{\footnotesize\color{rockymidgray}teamrocky.cl}
+\fancyfoot[R]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\section}
+  {\color{rockyblack}\bfseries\fontsize{24}{28}\selectfont}
+  {\color{rockyred}\thesection.}{0.5em}{}
+\titleformat{\subsection}
+  {\color{rockyblack}\bfseries\fontsize{15}{18}\selectfont}
+  {}{0pt}{}
+
+\newcommand{\placeholder}[2][55mm]{%
+  \begin{center}
+    \fcolorbox{rockymidgray}{rockygray}{%
+      \parbox[c][#1][c]{0.91\textwidth}{%
+        \centering\color{rockymidgray}\Large
+        \textbf{Aquí va una imagen de #2}%
+      }%
+    }
+  \end{center}
+}
+
+\newcommand{\dato}{\textcolor{rockymidgray}{.........................}}
+\newcommand{\rockyquote}[1]{%
+  \begin{center}
+    \colorbox{rockyblack}{%
+      \parbox{0.88\textwidth}{\centering\color{white}\Large\bfseries #1}%
+    }
+  \end{center}
+}
+
+\begin{document}
+
+\input{portada}
+\input{quienes_somos}
+\input{historia}
+\input{equipo}
+\input{resultados}
+\input{presencia}
+\input{patrocinio}
+\input{beneficios}
+\input{calendario}
+\input{contacto}
+
+\end{document}

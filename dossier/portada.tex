@@ -1,0 +1,29 @@
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[rockyblack] (current page.south west) rectangle (current page.north east);
+  \fill[rockyred] (current page.south west) rectangle
+    ([xshift=8mm]current page.north west);
+\end{tikzpicture}
+
+\vspace*{16mm}
+{\color{white}\fontsize{18}{22}\selectfont CICLISMO DE RUTA · CHILE\par}
+\vspace{10mm}
+{\color{white}\bfseries\fontsize{42}{46}\selectfont TEAM\par}
+{\color{rockyred}\bfseries\fontsize{58}{62}\selectfont ROCKY\par}
+\vspace{3mm}
+{\color{white}\fontsize{22}{26}\selectfont DOSSIER DE PATROCINIO\par}
+{\color{white}\bfseries\fontsize{34}{38}\selectfont 2027\par}
+
+\vfill
+\begin{center}
+  \fcolorbox{white}{rockyblack}{%
+    \parbox[c][85mm][c]{0.82\textwidth}{%
+      \centering\color{white}\Large\bfseries
+      Aquí va una imagen heroica del equipo en competencia%
+    }%
+  }
+\end{center}
+\vfill
+
+{\color{white}\large\textbf{www.teamrocky.cl}\par}
+\newpage

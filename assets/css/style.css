@@ -157,6 +157,18 @@ h2 {
 .nav-link:focus {
   color: var(--color-yellow);
 }
+.nav-link.active {
+  color: var(--color-yellow) !important;
+}
+.nav-link:not(.nav-cta).active::after {
+  background: currentColor;
+  border-radius: 999px;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 0.18rem auto 0;
+  width: 100%;
+}
 .nav-cta {
   background: var(--color-red);
   border-radius: 4px;
@@ -168,6 +180,10 @@ h2 {
 .nav-cta:hover,
 .nav-cta:focus {
   background: #b9181e;
+}
+.nav-cta.active {
+  background: var(--color-yellow);
+  color: #080a0d !important;
 }
 .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.24);

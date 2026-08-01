@@ -49,6 +49,16 @@
   {\color{rockyblack}\bfseries\fontsize{15}{18}\selectfont}
   {}{0pt}{}
 
+\newcommand{\bigstat}[2]{%
+  {\color{rockyred}\bfseries\fontsize{38}{42}\selectfont #1\par}
+  {\color{rockyblack}\bfseries\large #2\par}
+}
+\newcommand{\benefit}[2]{%
+  \begin{minipage}[t]{0.47\textwidth}
+    {\color{rockyred}\fontsize{18}{20}\selectfont\textbullet}\hspace{2mm}%
+    \parbox[t]{0.86\textwidth}{\textbf{#1}\par\small #2}
+  \end{minipage}
+}
 \newcommand{\placeholder}[2][55mm]{%
   \begin{center}
     \fcolorbox{rockymidgray}{rockygray}{%
@@ -73,8 +83,10 @@
 
 \input{portada}
 \input{quienes_somos}
+\input{cifras}
 \input{historia}
 \input{equipo}
+\input{galeria}
 \input{resultados}
 \input{presencia}
 \input{patrocinio}

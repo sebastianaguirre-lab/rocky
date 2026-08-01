@@ -274,6 +274,33 @@ $(document).ready(function () {
 
     renderizarCorredores();
 
+    var pressCarousel = document.getElementById("pressCarousel");
+    var existingPressCarousel = bootstrap.Carousel.getInstance(pressCarousel);
+    if (existingPressCarousel) {
+        existingPressCarousel.dispose();
+    }
+    var pressCarouselInstance = new bootstrap.Carousel(pressCarousel, {
+        interval: false,
+        touch: false,
+        wrap: true
+    });
+    var pressTouchStartX = 0;
+    var pressTouchStartY = 0;
+
+    pressCarousel.addEventListener("touchstart", function (event) {
+        pressTouchStartX = event.touches[0].clientX;
+        pressTouchStartY = event.touches[0].clientY;
+    }, { passive: true });
+
+    pressCarousel.addEventListener("touchend", function (event) {
+        var deltaX = event.changedTouches[0].clientX - pressTouchStartX;
+        var deltaY = event.changedTouches[0].clientY - pressTouchStartY;
+
+        if (Math.abs(deltaX) >= 20 && Math.abs(deltaX) > Math.abs(deltaY)) {
+            deltaX > 0 ? pressCarouselInstance.prev() : pressCarouselInstance.next();
+        }
+    }, { passive: true });
+
     var resizeTimer;
     $(window).on("resize", function () {
         clearTimeout(resizeTimer);

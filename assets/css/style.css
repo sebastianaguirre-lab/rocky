@@ -1241,10 +1241,6 @@ h2 {
     padding-bottom: 3.7rem;
     touch-action: pan-y;
   }
-  .press-carousel img {
-    -webkit-user-drag: none;
-    user-select: none;
-  }
   .press-carousel .carousel-inner {
     display: block;
     overflow: hidden;

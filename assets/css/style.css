@@ -1544,10 +1544,10 @@ h2 {
     background:
       linear-gradient(
         180deg,
-        rgba(7, 8, 10, 0.98) 0%,
-        rgba(7, 8, 10, 0.28) 42%,
-        rgba(7, 8, 10, 0.78) 72%,
-        rgba(7, 8, 10, 0.96) 100%
+        rgba(7, 8, 10, 0.99) 0%,
+        rgba(7, 8, 10, 0.90) 42%,
+        rgba(7, 8, 10, 0.90) 72%,
+        rgba(7, 8, 10, 0.99) 100%
       ),
       url("../img/iniciativa.jpeg") center 35% / cover;
   }

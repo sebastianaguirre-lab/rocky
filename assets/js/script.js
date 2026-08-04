@@ -301,6 +301,23 @@ $(document).ready(function () {
         }
     }, { passive: true });
 
+    var participateGrid = document.querySelector(".participate-grid");
+    var participateCards = participateGrid ? Array.from(participateGrid.querySelectorAll(".participate-card")) : [];
+    var participateDots = Array.from(document.querySelectorAll("[data-participate-slide]"));
+    var participateIndex = 0;
+    function updateParticipateCarousel(index, shouldScroll) {
+        if (!participateCards.length) return;
+        participateIndex = Math.max(0, Math.min(index, participateCards.length - 1));
+        participateDots.forEach(function (dot, i) { var active = i === participateIndex; dot.classList.toggle("active", active); dot.setAttribute("aria-selected", active ? "true" : "false"); });
+        if (shouldScroll) participateCards[participateIndex].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    }
+    $(".participate-prev").on("click", function () { updateParticipateCarousel(participateIndex - 1, true); });
+    $(".participate-next").on("click", function () { updateParticipateCarousel(participateIndex + 1, true); });
+    $("[data-participate-slide]").on("click", function () { updateParticipateCarousel(Number($(this).data("participate-slide")), true); });
+    if (participateGrid && "IntersectionObserver" in window) {
+        var participateObserver = new IntersectionObserver(function (entries) { entries.forEach(function (entry) { if (entry.isIntersecting && entry.intersectionRatio >= 0.65) updateParticipateCarousel(participateCards.indexOf(entry.target), false); }); }, { root: participateGrid, threshold: 0.65 });
+        participateCards.forEach(function (card) { participateObserver.observe(card); });
+    }
     var resizeTimer;
     $(window).on("resize", function () {
         clearTimeout(resizeTimer);

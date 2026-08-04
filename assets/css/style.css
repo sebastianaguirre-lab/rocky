@@ -1540,6 +1540,18 @@ h2 {
 }
 /* Mobile story image treatment */
 @media (max-width: 767px) {
+  .section-story {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(7, 8, 10, 0.08) 0%,
+        rgba(7, 8, 10, 0.28) 42%,
+        rgba(7, 8, 10, 0.78) 72%,
+        rgba(7, 8, 10, 0.96) 100%
+      ),
+      url("../img/iniciativa.jpeg") center 35% / cover;
+  }
+
   .story-panel {
     background: transparent;
     border-left: 0;
@@ -1550,8 +1562,6 @@ h2 {
   .story-panel h2,
   .story-panel p,
   .story-panel .section-kicker {
-    text-shadow:
-      0 2px 5px rgba(0, 0, 0, 0.95),
-      0 8px 24px rgba(0, 0, 0, 0.82);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.68);
   }
 }

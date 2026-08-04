@@ -491,6 +491,10 @@ h2 {
 .calendar-section {
   background: var(--color-bg);
 }
+.calendar-intro {
+  line-height: 1.7;
+  max-width: 390px;
+}
 .race-table {
   --bs-table-bg: transparent;
   --bs-table-color: var(--color-text);
@@ -508,6 +512,27 @@ h2 {
   color: rgba(255, 255, 255, 0.86);
   font-weight: 600;
   padding: 1.05rem 1rem;
+}
+.race-table td a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  transition: color 180ms ease, transform 180ms ease;
+}
+.race-table td a:hover,
+.race-table td a:focus-visible {
+  color: var(--color-yellow);
+  transform: translateX(3px);
+}
+.race-location {
+  color: var(--color-muted) !important;
+  font-size: 0.92rem;
+  font-weight: 500 !important;
+}
+.race-location i {
+  color: var(--color-yellow);
+  font-size: 0.78rem;
+  margin-right: 0.45rem;
 }
 .sponsor-section {
   background: linear-gradient(135deg, #181c21, #0a0c0f);

@@ -1553,15 +1553,17 @@ h2 {
   }
 
   .story-panel {
-    background: transparent;
-    border-left: 0;
+    background: none;
+    border: 0;
     border-radius: 0;
+    box-shadow: none;
     padding: 2rem 0;
+    backdrop-filter: none;
   }
 
   .story-panel h2,
   .story-panel p,
   .story-panel .section-kicker {
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.68);
+    text-shadow: none;
   }
 }

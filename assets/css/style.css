@@ -1606,3 +1606,9 @@ h2 {
     margin: 0;
   }
 }
+
+/* Taller press image frame */
+.press-card-image img,
+.press-carousel .carousel-item img {
+  aspect-ratio: 16 / 11;
+}

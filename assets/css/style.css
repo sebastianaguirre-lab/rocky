@@ -1612,3 +1612,23 @@ h2 {
 .press-carousel .carousel-item img {
   aspect-ratio: 16 / 11;
 }
+/* Latest results placeholder */
+.latest-results {
+  background: rgba(255, 255, 255, 0.035);
+  border-left: 3px solid var(--color-red);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.latest-results h3 {
+  color: var(--color-yellow);
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  margin: 0 0 0.45rem;
+}
+
+.latest-results p {
+  color: var(--color-muted);
+  margin: 0;
+  max-width: 65ch;
+}

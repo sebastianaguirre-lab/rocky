@@ -1,5 +1,13 @@
 $(document).ready(function () {
     var fallbackPhoto = "assets/img/Imagen3.png";
+  
+    var resultados = [{
+        position: "3° lugar", race: "Giro del Maipo", date: "9 de agosto de 2026",
+        image: "assets/img/Podio_2026-08-09.jpg",
+        description: "Joel Peña consiguió el 3° lugar en el Giro del Maipo, sumando un nuevo podio durante la temporada 2026.",
+        externalUrl: ""
+    }];
+
     var corredores = [
         {   id: "theo-mora",
             nombre: "José Mora",
@@ -375,6 +383,34 @@ $(document).ready(function () {
             $("#navbar").removeClass("scrolled");
         }
     }
+
+    function renderResultados() {
+        var $track = $("#resultsTrack");
+        resultados.forEach(function (resultado, index) {
+            var $card = $("<article>", { class: "result-card" });
+            $("<img>", { src: resultado.image, alt: "Podio de Team Rocky en " + resultado.race, loading: "lazy" }).appendTo($card);
+            var $body = $("<div>", { class: "result-card-body" }).appendTo($card);
+            $("<p>", { class: "result-position", text: resultado.position }).appendTo($body);
+            $("<h4>", { text: resultado.race }).appendTo($body);
+            $("<p>", { class: "result-date", text: resultado.date }).appendTo($body);
+            $("<button>", { class: "btn btn-principal result-more", type: "button", text: "Leer más", "data-result-index": index, "aria-label": "Leer más sobre " + resultado.race }).appendTo($body);
+            $track.append($card);
+        });
+        $("#resultsCarouselControls").prop("hidden", resultados.length <= 1);
+    }
+    renderResultados();
+    $(document).on("click", ".result-more", function () {
+        var resultado = resultados[Number($(this).data("result-index"))];
+        if (!resultado) return;
+        $("#resultModalTitle").text(resultado.race); $("#resultModalDate").text(resultado.date);
+        $("#resultModalPosition").text(resultado.position); $("#resultModalDescription").text(resultado.description);
+        $("#resultModalLink").toggle(Boolean(resultado.externalUrl)).attr("href", resultado.externalUrl || "#");
+        bootstrap.Modal.getOrCreateInstance(document.getElementById("resultModal")).show();
+    });
+    $("#resultsPrev, #resultsNext").on("click", function () {
+        var card = document.querySelector(".result-card");
+        document.getElementById("resultsTrack").scrollBy({ left: (this.id === "resultsPrev" ? -1 : 1) * ((card ? card.offsetWidth : 280) + 20), behavior: "smooth" });
+    });
 
     $(window).on("scroll resize", actualizarNavegacion);
     actualizarNavegacion();

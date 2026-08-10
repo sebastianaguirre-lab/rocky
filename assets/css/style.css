@@ -1544,10 +1544,10 @@ h2 {
     background:
       linear-gradient(
         180deg,
-        rgba(7, 8, 10, 0.50) 0%,
-        rgba(7, 8, 10, 0.80) 42%,
-        rgba(7, 8, 10, 0.90) 72%,
-        rgba(7, 8, 10, 0.99) 100%
+        rgba(7, 8, 10, 0.40) 0%,
+        rgba(7, 8, 10, 0.70) 42%,
+        rgba(7, 8, 10, 0.80) 72%,
+        rgba(7, 8, 10, 0.90) 100%
       ),
       url("../img/iniciativa.jpeg") center 35% / cover;
   }
@@ -1612,23 +1612,57 @@ h2 {
 .press-carousel .carousel-item img {
   aspect-ratio: 16 / 11;
 }
-/* Latest results placeholder */
-.latest-results {
-  background: rgba(255, 255, 255, 0.035);
-  border-left: 3px solid var(--color-red);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  margin-top: clamp(2rem, 4vw, 3rem);
-  padding: clamp(1.25rem, 3vw, 1.75rem);
+/* Latest results */
+.latest-results { margin-top: clamp(2rem, 4vw, 3rem); }
+.latest-results h3 { color: var(--color-yellow); font-size: clamp(1.65rem, 3vw, 2.25rem); margin: 0; }
+.latest-results-heading { align-items: center; display: flex; justify-content: space-between; margin-bottom: 1.35rem; }
+.results-track { display: flex; gap: 1.25rem; overflow-x: auto; padding: .25rem 0 1.25rem; scroll-behavior: smooth; scroll-snap-type: x mandatory; scrollbar-color: rgba(255,255,255,.2) transparent; scrollbar-width: thin; }
+.result-card { background: linear-gradient(145deg,#1b1f25,var(--color-panel)); border: 1px solid var(--color-line); border-radius: var(--radius-md); box-shadow: var(--shadow-soft); flex: 0 0 280px; overflow: hidden; scroll-snap-align: start; transition: border-color .25s ease,box-shadow .25s ease,transform .25s ease; }
+.result-card:hover { border-color: rgba(255,255,255,.17); box-shadow: 0 24px 54px rgba(0,0,0,.25); transform: translateY(-4px); }
+.result-card img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+.result-card-body { padding: 1.25rem; }
+.result-card-body .result-position { color: var(--color-yellow); font-family: var(--font-title); font-size: 1.45rem; font-weight: 800; letter-spacing: .055em; margin: 0 0 .35rem; text-transform: uppercase; }
+.result-card h4 { font-family: var(--font-title); font-size: 1.55rem; margin: 0 0 .25rem; }
+.result-card-body .result-date { color: var(--color-muted); font-size: .88rem; margin: 0 0 1rem; }
+.result-more { width: 100%; }
+.results-carousel-controls { display: flex; gap: .65rem; }
+.results-carousel-button { align-items: center; background: transparent; border: 1px solid var(--color-line); border-radius: 50%; color: var(--color-text); display: flex; height: 44px; justify-content: center; width: 44px; }
+.results-carousel-button:hover { border-color: var(--color-yellow); color: var(--color-yellow); }
+.latest-results .results-history-note { color: var(--color-muted); font-size: .78rem; line-height: 1.6; margin: .25rem 0 0; max-width: 75ch; }
+.result-modal .modal-content { background: linear-gradient(145deg,#1b1f25,var(--color-panel)); border: 1px solid var(--color-line); border-radius: var(--radius-md); box-shadow: 0 28px 80px rgba(0,0,0,.5); color: var(--color-text); position: relative; }
+.result-modal-close { position: absolute; right: 1.15rem; top: 1.15rem; z-index: 2; }
+.result-modal-body { padding: clamp(1.5rem,5vw,2.5rem); }
+.result-modal-date { color: var(--color-muted); font-size: .85rem; margin: 0 3rem .5rem 0; }
+.result-modal h2 { font-size: clamp(2.2rem,7vw,3.4rem); margin-bottom: .65rem; }
+.result-modal-position { color: var(--color-yellow); font-family: var(--font-title); font-size: 1.55rem; font-weight: 800; text-transform: uppercase; }
+.result-modal-description { color: var(--color-muted); line-height: 1.7; margin: 1.25rem 0 1.75rem; }
+@media (max-width: 576px) {
+  .results-track { margin-inline: -20px; padding-inline: 20px; scroll-padding-inline: 20px; scrollbar-width: none; }
+  .results-track::-webkit-scrollbar { display: none; }
+  .result-card { flex-basis: calc(100vw - 64px); max-width: 290px; }
+  .result-card:hover { transform: none; }
+  .result-modal .modal-dialog { margin: .75rem; }
 }
 
-.latest-results h3 {
-  color: var(--color-yellow);
-  font-size: clamp(1.65rem, 3vw, 2.25rem);
-  margin: 0 0 0.45rem;
+/* Keep the mobile hero compact after the global visual-system overrides. */
+@media (max-width: 767px) {
+  .hero,
+  .hero-content {
+    min-height: 0;
+  }
+
+  .hero-content {
+    justify-content: flex-start;
+    padding-bottom: 3.5rem;
+    padding-top: calc(56.94vw + 2rem);
+  }
 }
 
-.latest-results p {
-  color: var(--color-muted);
-  margin: 0;
-  max-width: 65ch;
+/* Tighten only the transition between About and Philosophy. */
+#quienes-somos {
+  padding-bottom: clamp(2.75rem, 4vw, 4rem);
+}
+
+#filosofia {
+  padding-top: clamp(2.75rem, 4vw, 4rem);
 }

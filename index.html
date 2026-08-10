@@ -580,11 +580,6 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>9 Ago</td>
-                      <td><a href="https://www.instagram.com/giro_del_maipo/" target="_blank" rel="noopener noreferrer">Giro del Maipo</a></td>
-                      <td class="race-location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Isla de Maipo</td>
-                    </tr>
-                    <tr>
                       <td>23 Ago</td>
                       <td><a href="https://www.instagram.com/club_ciclista.coltauco/" target="_blank" rel="noopener noreferrer">Ruta del Ácido</a></td>
                       <td class="race-location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Coltauco</td>
@@ -605,8 +600,15 @@
             </div>
           </div>
           <div class="latest-results">
-            <h3>Últimos resultados</h3>
-            <p>Esta sección se actualizará durante la temporada con los resultados más destacados del equipo</p>
+            <div class="latest-results-heading">
+              <h3>Últimos resultados</h3>
+              <div id="resultsCarouselControls" class="results-carousel-controls" hidden>
+                <button id="resultsPrev" class="results-carousel-button" type="button" aria-label="Ver resultados anteriores"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+                <button id="resultsNext" class="results-carousel-button" type="button" aria-label="Ver resultados siguientes"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div id="resultsTrack" class="results-track" aria-label="Resultados deportivos"></div>
+            <p class="results-history-note">Registro de resultados iniciado el 9 de agosto de 2026. Esta sección se actualizará durante la temporada con los resultados más destacados del equipo.</p>
           </div>
         </div>
       </section>
@@ -789,7 +791,7 @@
             </p>
             <a
               class="btn btn-principal developer-note-action"
-              href="https://wa.me/56994226803?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20las%20iniciativas%20para%20dar%20visibilidad%20al%20ciclismo%20chileno."
+              href="https://wa.me/56972617614?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20las%20iniciativas%20para%20dar%20visibilidad%20al%20ciclismo%20chileno."
               target="_blank"
               rel="noopener"
             >
@@ -975,6 +977,17 @@
         </div>
       </div>
     </div>
+    <div class="modal fade result-modal" id="resultModal" tabindex="-1" aria-labelledby="resultModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+        <button type="button" class="btn-close btn-close-white result-modal-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        <div class="result-modal-body">
+          <p id="resultModalDate" class="result-modal-date"></p><h2 id="resultModalTitle"></h2>
+          <p id="resultModalPosition" class="result-modal-position"></p><p id="resultModalDescription" class="result-modal-description"></p>
+          <a id="resultModalLink" class="btn btn-principal" href="#" target="_blank" rel="noopener noreferrer">Ver publicación <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+      </div></div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>

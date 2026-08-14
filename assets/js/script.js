@@ -27,7 +27,7 @@ $(document).ready(function () {
             resumen: "Ciclista máster del Team Rocky y campeona nacional en 2026.",
             bio: "Integrante del Team Rocky en categoría Máster, Paula compite en pruebas de ciclismo de ruta y representa los colores del equipo en el calendario nacional.",
             palmares: "Campeona nacional máster (2026).",
-            foto: "assets/img/Paula.jpeg"
+            foto: "assets/img/paula.jpeg"
         },
         {
             id: "theo-mora",

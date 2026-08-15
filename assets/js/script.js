@@ -17,7 +17,8 @@ $(document).ready(function () {
             resumen: "Ciclista junior y representante de la nueva generación del Team Rocky.",
             bio: "Integrante del Team Rocky en categoría Junior, Joaquín representa al equipo en competencias de ciclismo de ruta, adquiriendo experiencia y fortaleciendo su desarrollo deportivo en una etapa clave de su formación.",
             palmares: "En desarrollo.",
-            foto: "assets/img/joaquin.jpg"
+            foto: "assets/img/joaquin.png",
+            posicionMovil: "50% 20%"
         },
         {
             id: "paula-viertel",
@@ -87,7 +88,8 @@ $(document).ready(function () {
             resumen: "Fundador y líder del Team Rocky, con una destacada trayectoria deportiva.",
             bio: "Impulsor y líder del Team Rocky, proyecto que promueve el rendimiento deportivo, el trabajo en equipo y la formación de una comunidad unida por el ciclismo.",
             palmares: "Dos veces campeón nacional máster de patín carrera.\nCampeón por equipos en el Gran Fondo Valle del Elqui (2022), con un 2.º lugar en Máster A y un 3.er lugar en la clasificación general.\n2.º lugar en la Clásica Andacollo (2025).\nCampeón del Ranking Anual por Equipos Canadela, categoría Máster A (2024 y 2025).\n2.º lugar por equipos en la Vuelta Maule Centro (2024) y 3.er lugar (2025).\nCampeón del Ranking por Equipos Coltauco (2025).",
-            foto: "assets/img/rocky.jpeg"
+            foto: "assets/img/rocky.png",
+            posicionMovil: "50% 35%"
         },
         {
             id: "juan-luis-perez-farfan",
@@ -97,7 +99,7 @@ $(document).ready(function () {
             resumen: "Corredor con buena lectura de carrera y capacidad para aprovechar las fugas decisivas.",
             bio: "Corredor con capacidad para interpretar el desarrollo de la competencia, leer a sus rivales y aprovechar las oportunidades de fuga. Su filosofía es: \"Donde el aire no cabe en el pecho y las piernas no pueden más, las mías se activan para generar la diferencia\".",
             palmares: "5.º lugar en el Giro Laboral AMCLA (2000).\n4.º lugar en el segundo semestre Canadela (2008).\n2.º lugar en el Circuito La Pampilla (2016).\n3.er lugar en el Ranking Anual Adultos B Proam.\n5.º lugar en el Ranking Anual Máster Canadela (2024).\n5.º lugar en el Ranking Anual Máster Canadela (2026).",
-            foto: "assets/img/juanluis.png"
+            foto: "assets/img/juanluis.jpeg"
         },
         {
             id: "joel",
@@ -147,7 +149,7 @@ $(document).ready(function () {
             resumen: "Ciclista constante y versátil, orientado a la superación de nuevos desafíos.",
             bio: "Ciclista entusiasta y constante, siempre en búsqueda de desafíos que pongan a prueba sus capacidades físicas y mentales y le permitan superarse día a día.",
             palmares: "",
-            foto: "assets/img/bastian.jpg"
+            foto: "assets/img/bastian.jpeg"
         },
         {
             id: "fernando-pautazzo",
@@ -177,7 +179,8 @@ $(document).ready(function () {
             resumen: "Rodador atento y especializado en neutralizar los intentos de fuga.",
             bio: "Corredor especializado en terreno plano, atento al desarrollo de la competencia y preparado para neutralizar los intentos de fuga.",
             palmares: "",
-            foto: "assets/img/camilo.png"
+            foto: "assets/img/camilo.png",
+            posicionMovil: "center top"
         }
     ];    
 
@@ -290,7 +293,12 @@ $(document).ready(function () {
     }
 
     function actualizarCorredor(corredor) {
-        $("#profilePhoto").off("error").on("error", function () { this.src = fallbackPhoto; }).attr("src", obtenerFoto(corredor.foto)).attr("alt", "Foto de " + corredor.nombre);
+        $("#profilePhoto")
+            .off("error")
+            .on("error", function () { this.src = fallbackPhoto; })
+            .attr("src", obtenerFoto(corredor.foto))
+            .attr("alt", "Foto de " + corredor.nombre)
+            .css("--profile-object-position-mobile", corredor.posicionMovil || "center center");
         $("#profileCategory").text(corredor.categoria);
         $("#riderModalTitle").text(corredor.nombre);
         $("#profileSpecialty").text(corredor.especialidad);

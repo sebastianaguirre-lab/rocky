@@ -88,8 +88,8 @@ $(document).ready(function () {
             resumen: "Fundador y líder del Team Rocky, con una destacada trayectoria deportiva.",
             bio: "Impulsor y líder del Team Rocky, proyecto que promueve el rendimiento deportivo, el trabajo en equipo y la formación de una comunidad unida por el ciclismo.",
             palmares: "Dos veces campeón nacional máster de patín carrera.\nCampeón por equipos en el Gran Fondo Valle del Elqui (2022), con un 2.º lugar en Máster A y un 3.er lugar en la clasificación general.\n2.º lugar en la Clásica Andacollo (2025).\nCampeón del Ranking Anual por Equipos Canadela, categoría Máster A (2024 y 2025).\n2.º lugar por equipos en la Vuelta Maule Centro (2024) y 3.er lugar (2025).\nCampeón del Ranking por Equipos Coltauco (2025).",
-            foto: "assets/img/rocky.png",
-            posicionMovil: "50% 35%"
+            foto: "assets/img/rocky.jpeg",
+            posicionMovil: "50% 25%"
         },
         {
             id: "juan-luis-perez-farfan",

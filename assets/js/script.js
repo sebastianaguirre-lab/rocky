@@ -1,12 +1,30 @@
 $(document).ready(function () {
     var fallbackPhoto = "assets/img/Imagen3.png";
   
-    var resultados = [{
+    var resultados = [
+    {
+        position: "1° lugar",
+        race: "Ruta del Ácido",
+        date: "23 de agosto de 2026",
+        image: "assets/img/Podio_2026-08-23_Fernando.png",
+        description: "Fernando Pautazzo se quedó con el 1° lugar en categoría Máster B en la Ruta del Ácido, en un apretado sprint final que lo llevó a la victoria tras 80 km de competencia.",
+        externalUrl: ""
+    },
+    {
+        position: "3° lugar",
+        race: "Ruta del Ácido",
+        date: "23 de agosto de 2026",
+        image: "assets/img/Podio_2026-08-23_Joaquin.png",
+        description: "Joaquín Rojas consiguió el 3° lugar en categoría Junior en la Ruta del Ácido, una carrera de 100 km sumamente exigente desarrolada en Coltauco, en donde el joven ciclista demostró su gran nivel y capacidad de resistencia.",
+        externalUrl: ""
+    },
+    {
         position: "3° lugar", race: "Giro del Maipo", date: "9 de agosto de 2026",
         image: "assets/img/Podio_2026-08-09.jpg",
         description: "Joel Peña consiguió el 3° lugar en el Giro del Maipo, sumando un nuevo podio durante la temporada 2026.",
         externalUrl: ""
-    }];
+    }
+    ];
 
     var corredores = [
         {

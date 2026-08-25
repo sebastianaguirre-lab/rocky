@@ -501,9 +501,40 @@ h2 {
   --bs-table-border-color: var(--color-line);
   margin: 0;
 }
+.race-table-wrap {
+  max-height: calc(3.35rem + (4 * 3.85rem));
+  overflow-x: auto;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  scrollbar-color: var(--color-yellow) rgba(255, 255, 255, 0.08);
+  scrollbar-gutter: stable;
+  scrollbar-width: auto;
+}
+.race-table-wrap::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+.race-table-wrap::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+}
+.race-table-wrap::-webkit-scrollbar-thumb {
+  background: var(--color-yellow);
+  border: 2px solid var(--color-panel);
+  border-radius: 999px;
+}
+.race-table-wrap:focus-visible {
+  border-color: var(--color-yellow);
+  outline: 3px solid rgba(245, 207, 67, 0.3);
+  outline-offset: 3px;
+}
 .race-table th {
+  background: #1b1f25;
+  position: sticky;
+  top: 0;
+  z-index: 2;
   color: var(--color-yellow);
   font-size: 0.78rem;
+  height: 3.35rem;
   letter-spacing: 0.1em;
   padding: 1rem;
   text-transform: uppercase;
@@ -511,7 +542,26 @@ h2 {
 .race-table td {
   color: rgba(255, 255, 255, 0.86);
   font-weight: 600;
+  height: 3.85rem;
   padding: 1.05rem 1rem;
+}
+.race-scroll-hint {
+  align-items: center;
+  color: var(--color-yellow);
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 700;
+  gap: 0.55rem;
+  justify-content: flex-end;
+  letter-spacing: 0.04em;
+  margin: 0.75rem 0 0;
+}
+.race-scroll-hint i {
+  animation: race-scroll-cue 1.4s ease-in-out infinite;
+}
+@keyframes race-scroll-cue {
+  0%, 100% { transform: translateY(-2px); }
+  50% { transform: translateY(3px); }
 }
 .race-table td a {
   color: #fff;

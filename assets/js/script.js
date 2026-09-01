@@ -2,6 +2,31 @@ $(document).ready(function () {
     var fallbackPhoto = "assets/img/Imagen3.png";
   
     var resultados = [
+    
+    {
+        position: "2° lugar",
+        race: "Noviciado",
+        date: "30 de agosto de 2026",
+        image: "assets/img/Podio_2026-08-30_paula.jpeg",
+        description: "Paula Viertel consiguió el 2° lugar en Noviciado, en una jornada marcada por un circuito completamente llano y de alta velocidad, que terminó definiéndose en el embalaje final.",
+        externalUrl: ""
+    },
+    {
+        position: "2° lugar",
+        race: "Noviciado",
+        date: "30 de agosto de 2026",
+        image: "assets/img/Podio_2026-08-30_theo.jpeg",
+        description: "José Mora alcanzó el 2° lugar en Noviciado, tras una competencia rápida y muy disputada sobre terreno completamente llano, resuelta finalmente en el sprint.",
+        externalUrl: ""
+    },
+    {
+        position: "5° lugar",
+        race: "Noviciado",
+        date: "30 de agosto de 2026",
+        image: "assets/img/Podio_2026-08-30_tony.jpeg",
+        description: "Tony Linares finalizó en el 5° lugar en Noviciado, completando una destacada actuación en una carrera de alta velocidad que llegó agrupada al embalaje final.",
+        externalUrl: ""
+    },    
     {
         position: "1° lugar",
         race: "Ruta del Ácido",

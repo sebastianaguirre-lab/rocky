@@ -4,6 +4,22 @@ $(document).ready(function () {
     var resultados = [
     
     {
+        position: "5° lugar",
+        race: "Rivera",
+        date: "6 de septiembre de 2026",
+        image: "assets/img/Podio_2026-09-06_juanjose.jpeg",
+        description: "Juan José consiguió el 5° lugar en Rivera, en una jornada llena de fugas, finalizada en embalaje masivo.",
+        externalUrl: ""
+    },
+    {
+        position: "5° lugar",
+        race: "Rivera",
+        date: "6 de septiembre de 2026",
+        image: "assets/img/Podio_2026-09-06_fernando.jpeg",
+        description: "Fernando, por por segunda vez consecutiva, alcanzó el podio en aprovechando el embalaje final, logrando el 5° lugar en Rivera.",
+        externalUrl: ""
+    },    
+    {
         position: "2° lugar",
         race: "Noviciado",
         date: "30 de agosto de 2026",

@@ -4,6 +4,30 @@ $(document).ready(function () {
     var resultados = [
     
     {
+        position: "1° lugar",
+        race: "Clasificación General Vuelta Río Claro",
+        date: "12 y 13 de septiembre de 2026",
+        image: "assets/img/Podio_2026-09-12_joel.jpeg",
+        description: "Joel se coronó campeón de la Vuelta Río Claro en la categoría Máster, tras una destacada actuación en la contrarreloj y en la etapa final, logrando el 1° lugar en la clasificación general.",
+        externalUrl: ""
+    },
+    {
+        position: "1° lugar",
+        race: "Etapa Reina Vuelta Río Claro",
+        date: "13 de septiembre de 2026",
+        image: "assets/img/Podio_2026-09-12_theo.jpeg",
+        description: "Theo Mora consiguióla victoria de la etapa reina en la categoría Máster C, tras una jornada de alta exigencia y estrategia.",
+        externalUrl: ""
+    },
+    {
+        position: "1° lugar",
+        race: "CRI Vuelta Río Claro",
+        date: "12 de septiembre de 2026",
+        image: "assets/img/Podio_2026-09-12_rocky.jpeg",
+        description: "Rocky Urbina se quedó con el 1° lugar en la contrarreloj de la Vuelta Río Claro, demostrando su capacidad para mantener un ritmo constante y competitivo en esta prueba individual.",
+        externalUrl: ""
+    },
+    {
         position: "5° lugar",
         race: "Rivera",
         date: "6 de septiembre de 2026",

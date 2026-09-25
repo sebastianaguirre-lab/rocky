@@ -144,16 +144,6 @@ $(document).ready(function () {
             foto: "assets/img/juanjose.jpeg"
         },
         {
-            id: "sebastian-aguirre",
-            nombre: "Sebastián Aguirre",
-            categoria: "Élite",
-            especialidad: "Escalada y fuga",
-            resumen: "Escalador con capacidad para participar en fugas y apoyar tácticamente al equipo.",
-            bio: "Corredor de perfil escalador, con experiencia de trabajo en velódromo y capacidad para brindar apoyo táctico en los tramos decisivos. Aunque su principal fortaleza es la escalada, está preparado para competir en distintos tipos de terreno.",
-            palmares: "1.er lugar en BCI Subaru Farellones (2024).\n2.º lugar en el Campeonato Nacional, prueba de persecución por equipos (2024).\n5.º lugar en el Ranking Anual Canadela (2025).",
-            foto: "assets/img/sebastian.jpeg"
-        },
-        {
             id: "diego-andres-ramirez-paez",
             nombre: "Diego Ramírez",
             categoria: "Élite",
